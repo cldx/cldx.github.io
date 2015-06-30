@@ -540,10 +540,10 @@ footer {
     width: 100%;
   }
   .tile img {
-    width: 23%;
+    width: 96%;
 	border-radius:0px;
 	border:0px;
-	margin:1%;
+	margin:2%;
 	padding:0px;
   }
   #social img{
