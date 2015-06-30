@@ -533,15 +533,19 @@ footer {
   .tile {
     height: 80px;
     width: 80px;
+	border-radius:0px;
+	border:0px;
+	margin:0px;
+	padding:0px;
   }
   .tilerow {
     height: 80px;
     width: 100%;
   }
   .tile img {
-    height: 60px;
-    width: 60px;
-    margin: 6px;
+    height: 80px;
+    width: 80px;
+    margin: 0px;
   }
   #social img{
 	padding:10px;
