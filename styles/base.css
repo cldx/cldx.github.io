@@ -542,5 +542,8 @@ footer {
     width: 60px;
     margin: 6px;
   }
+  #social img{
+	padding:10px;
+  }
 }
 
