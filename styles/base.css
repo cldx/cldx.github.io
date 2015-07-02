@@ -548,5 +548,10 @@ footer {
   #social img{
 	padding:10px;
   }
+#article-wrapper,
+#sketchbook-wrapper,
+#vita-wrapper {
+  padding-bottom: 40px;
+}
 }
 
