@@ -17,7 +17,7 @@
 		
 		function showDarkbox(){
 			var $win = $(window);
-			$('.darkbox').css({ 'top': $win.scrollTop() });
+			$('.darkbox').css({ 'top': $win.scrollTop() , 'height': $win.height() });
 			//$('.container-wrapper').css({ 'margin-top': $.darkboxProps.offset, "height" : $.darkboxProps.height });
 			
 			if($.darkboxProps.initial == true){
@@ -86,7 +86,8 @@
 			});
 		
 		});
-		 
+		
+ 
 		 $(window).scroll(function(){
 			var $win = $(window);
 			$('.darkbox').css('top', $win.scrollTop());
