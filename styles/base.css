@@ -31,6 +31,9 @@ h2 {
   padding: 10px;
   color: #373b44;
 }
+
+img {  border: 0; }
+
 header h1 {
   font-size: 4em;
   font-weight: 300;
@@ -39,25 +42,18 @@ header h1 {
   color: #dee1b6;
 }
 #sketchbook-wrapper h1 {
-  color: #dee1b6;
+  color: #dee1b6;s
 }
 #social h2 {
   text-align: center;
   color: #dee1b6;
 }
-#social img{ height:32px; width:32px; padding:30px 40px;}
-img {
-  border: 0;
-}
-section img {
-  width: 80%;
-  border: 0px solid #dee1b6;
-  border-radius: 24px;
-  transition: all 0.4s ease-out;
-}
-#article-wrapper section img {
-  border-radius: 24px;
-}
+img.social-link{ height:32px; width:32px; padding:30px 40px;}
+
+img.section-image { border-radius: 24px; max-width:300px; margin:48px; }
+
+img.intro-image { float:left; }
+img.vita-image { float:right; }
 /* the following class is full of fail */
 article {
   padding-top: 60px;
@@ -75,6 +71,7 @@ p {
   padding: 0.4em;
   color: #373b44;
 }
+
 p.center {
   text-align: center;
 }
@@ -88,9 +85,7 @@ footer p {
 .info-box p {
   font-size: 1.6em;
 }
-article p:first-child {
-  float: right;
-}
+
 a,
 i {
   font-weight: normal;
@@ -525,9 +520,11 @@ footer {
     -webkit-column-count: 1;
     -moz-column-count: 1;
   }
-  section img {
-    width: 40%;
-  }
+
+	img.intro-image, img.vita-image { 
+	float:none;
+	}
+
   .tilespot,
   .spot,
   .tile {
