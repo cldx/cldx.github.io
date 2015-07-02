@@ -523,6 +523,7 @@ footer {
 
 	img.intro-image, img.vita-image { 
 	float:none;
+	max-width:80%;
 	}
 
   .tilespot,
