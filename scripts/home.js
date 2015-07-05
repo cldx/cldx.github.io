@@ -1,6 +1,9 @@
 
 
      $(document).ready(function(){
+
+
+
 		$.darkboxProps = new Object();
 		$.darkboxProps.currentImage = "";
 		$.darkboxProps.nextImage = "";
@@ -14,6 +17,11 @@
 		
 		$("#article-wrapper article").css("display","none");
 		$("#article-wrapper article:first").css("display","block");
+
+		//we'll be needing this
+		var anchor = window.location.hash;
+        alert(anchor);
+
 		
 		function showDarkbox(){
 			var $win = $(window);
