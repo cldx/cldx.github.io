@@ -20,7 +20,7 @@
 
 		//we'll be needing this
 		var anchor = window.location.hash;
-        alert(anchor);
+        //alert(anchor);
 
 		
 		function showDarkbox(){
