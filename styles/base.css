@@ -39,17 +39,17 @@ header h1 {
   font-weight: 300;
   padding: 100px;
   text-align: center;
-  color: #dee1b6;
+  color: #f8fbd4;
 }
 
 .hidden{ display:none; }
 
 #sketchbook-wrapper h1 {
-  color: #dee1b6;s
+  color: #f8fbd4;s
 }
 #social h2 {
   text-align: center;
-  color: #dee1b6;
+  color: #f8fbd4;
 }
 img.social-link{ height:32px; width:32px; padding:30px 40px;}
 
@@ -83,7 +83,7 @@ footer p {
   line-height: 0.8em;
   font-weight: 300;
   padding: 3em;
-  color: #dee1b6;
+  color: #f8fbd4;
 }
 .info-box p {
   font-size: 1.6em;
@@ -96,20 +96,20 @@ i {
   text-decoration: none;
 }
 a {
-  color: #73c8a9;
+  color: #f8fbd4;
 }
 #vita-wrapper a {
-  color: #dee1b6;
+  color: #f8fbd4;
 }
 a:active {
-  color: #73c8a9;
+  color: #f8fbd4;
 }
 a:visited {
-  color: #73c8a9;
+  color: #f8fbd4;
 }
 a:hover,
 a:focus {
-  color: #73c8a9;
+  color: #f8fbd4;
 }
 #bg {
   position: fixed;
@@ -131,9 +131,22 @@ a:focus {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("../images/header-bg.jpg") center center;
-  background-size: cover;
 }
+
+.bg-image {
+ position:fixed;	
+ width:100%;
+ height:100%;
+ background-position: center center;
+ background-size: cover; 
+ opacity:0;
+ transition: opacity 2.5s ease-in;
+}
+
+.active{
+ opacity:1;
+}
+
 /*Wrappers******************************************************************************************/
 #content-wrapper {
   height: 100%;
@@ -147,7 +160,7 @@ a:focus {
 #sketchbook-wrapper,
 #vita-wrapper {
   width: 100%;
-  background: #dee1b6;
+  background: #f8fbd4;
   max-width: 100%;
   padding-bottom: 140px;
 }
@@ -155,7 +168,7 @@ a:focus {
   background: #373b44;
 }
 #vita-wrapper {
-  background: #73c8a9;
+  background: #f8fbd4;
 }
 /* Triangle Wrappers *********************************************************/
 #content-top-wrapper,
@@ -175,7 +188,7 @@ a:focus {
 .left,
 .right {
   height: 80px;
-  background: #dee1b6;
+  background: #f8fbd4;
   width: 50%;
 }
 #content-bottom-wrapper .left,
@@ -188,7 +201,7 @@ a:focus {
 }
 #vita-top-wrapper .left,
 #vita-top-wrapper .right {
-  background: #73c8a9;
+  background: #f8fbd4;
 }
 .top-left,
 .top-right,
@@ -200,49 +213,49 @@ a:focus {
 .top-left {
   border-top: 41px solid rgba(255, 255, 255, 0);
   border-right: 41px solid rgba(255, 255, 255, 0);
-  border-left: 40px solid #dee1b6;
-  border-bottom: 40px solid #dee1b6;
+  border-left: 40px solid #f8fbd4;
+  border-bottom: 40px solid #f8fbd4;
 }
 #sketchbook-top-wrapper .top-left {
-  border-top: 41px solid #dee1b6;
-  border-right: 41px solid #dee1b6;
+  border-top: 41px solid #f8fbd4;
+  border-right: 41px solid #f8fbd4;
   border-left: 40px solid #373b44;
   border-bottom: 40px solid #373b44;
 }
 #vita-top-wrapper .top-left {
   border-top: 41px solid #373b44;
   border-right: 41px solid #373b44;
-  border-left: 40px solid #73c8a9;
-  border-bottom: 40px solid #73c8a9;
+  border-left: 40px solid #f8fbd4;
+  border-bottom: 40px solid #f8fbd4;
 }
 .top-right {
   border-top: 40px solid rgba(255, 255, 255, 0);
-  border-right: 41px solid #dee1b6;
+  border-right: 41px solid #f8fbd4;
   border-left: 40px solid rgba(255, 255, 255, 0);
-  border-bottom: 41px solid #dee1b6;
+  border-bottom: 41px solid #f8fbd4;
 }
 #sketchbook-top-wrapper .top-right {
-  border-top: 41px solid #dee1b6;
+  border-top: 41px solid #f8fbd4;
   border-right: 41px solid #373b44;
-  border-left: 40px solid #dee1b6;
+  border-left: 40px solid #f8fbd4;
   border-bottom: 40px solid #373b44;
 }
 #vita-top-wrapper .top-right {
   border-top: 41px solid #373b44;
-  border-right: 41px solid #73c8a9;
+  border-right: 41px solid #f8fbd4;
   border-left: 40px solid #373b44;
-  border-bottom: 40px solid #73c8a9;
+  border-bottom: 40px solid #f8fbd4;
 }
 .bottom-left {
-  border-top: 41px solid #73c8a9;
-  border-right: 41px solid #73c8a9;
+  border-top: 41px solid #f8fbd4;
+  border-right: 41px solid #f8fbd4;
   border-left: 40px solid rgba(255, 255, 255, 0);
   border-bottom: 40px solid rgba(255, 255, 255, 0);
 }
 .bottom-right {
-  border-top: 41px solid #73c8a9;
+  border-top: 41px solid #f8fbd4;
   border-right: 41px solid rgba(255, 255, 255, 0);
-  border-left: 40px solid #73c8a9;
+  border-left: 40px solid #f8fbd4;
   border-bottom: 40px solid rgba(255, 255, 255, 0);
 }
 
@@ -286,7 +299,7 @@ a:focus {
 }
 .tilespot:hover img,
 .tilespot a:focus img {
-  border-color: #73c8a9;
+  border-color: #f8fbd4;
   box-shadow: 0px 10px 1px 0px #2c2f36;
   transform: translateY(-10px) rotateX(10deg);
 }
@@ -365,7 +378,7 @@ a:focus {
   height: 0%;	
 }
 .closeBox {
-  background: #73c8a9 url("../images/button-close.svg") center center no-repeat;
+  background: #f8fbd4 url("../images/button-close.svg") center center no-repeat;
   background-size: 16px;
   height: 48px;
   width: 48px;
@@ -423,7 +436,7 @@ a:focus {
 footer {
   width: 100%;
   height: 80px;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
   display: block;
   clear: both;
   position: relative;

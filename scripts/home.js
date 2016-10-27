@@ -96,6 +96,23 @@
 			});
 		
 		});
+
+		$(function () {
+    			var count = $("#slideshow .bg-image").length;
+    			var current = 1;
+			console.log("Count:"+count);
+		    function nextBackground() {
+			console.log("runnings");
+			$("#slideshow .bg-image").removeClass('active');
+			if(current >= count){ current = 1; }else{ current++; }
+			console.log(current);
+			$("#slideshow .bg-image:nth-child("+current+")").addClass('active');
+			setTimeout(nextBackground, 8000);
+		    }
+
+		    $("#slideshow .bg-image:nth-child(1)").addClass('active');
+		    setTimeout(nextBackground, 8000);
+		});
 		
  
 		 $(window).scroll(function(){
