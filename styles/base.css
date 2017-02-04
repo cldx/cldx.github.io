@@ -136,12 +136,12 @@ a:focus {
 .bg-image {
  position:fixed;	
  width:100%;
- height:auto;
+ height:500px;
 /* background-position: center center;
 -webkit-background-position:center center;
 */
  background-size: cover;
--webkit-background-size:100% auto;
+-webkit-background-size:cover;
  opacity:0;
  transition: opacity 2.5s ease-in;
 }
@@ -537,10 +537,10 @@ footer {
 	text-align:center;
   }
   header h1 {
-    font-size: 2.4em;
+    font-size: 1.4em;
     font-weight: 300;
     padding: 0px;
-    margin: 50px 0px 50px 0px;
+    margin: 10px 0px 10px 0px;
   }
   p {
     font-size: 1.2em;
