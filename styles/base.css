@@ -573,13 +573,14 @@ footer {
 	float:none;
 	max-width:80%;
 	margin:10px 0px;
+	
 	}
 
   .tilespot,
   .spot,
   .tile {
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 25%;
 
   }
   .tilerow {
@@ -587,10 +588,10 @@ footer {
     width: 100%;
   }
   .tile img {
-    width: 96%;
+    width: 100%;
 	border-radius:0px;
 	border:0px;
-	margin:2%;
+	margin:0%;
 	padding:0px;
   }
   #social img{
