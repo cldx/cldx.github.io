@@ -142,6 +142,7 @@ a:focus {
 */
  background-size: contain;
 -webkit-background-size:contain;
+-moz-background-size:contain;
 background-repeat:none;
  opacity:0;
  transition: opacity 2.5s ease-in;
@@ -484,7 +485,7 @@ footer {
   left: auto;
 }
 /*  a lot of displays still have it, also iPad */
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-device-width: 480px) and (max-device-width: 1024px) {
   header,
   nav,
   article,
@@ -495,6 +496,14 @@ footer {
     max-width: auto;
     min-width: auto;
   }
+
+  header h1 {
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+  }
+
   .flip-container {
     margin: 80px 76px;
   }
