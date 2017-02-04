@@ -139,7 +139,6 @@ a:focus {
  height:100%;
  background-position: center center;
  background-size: cover;
--webkit-background-size:cover; 
  opacity:0;
  transition: opacity 2.5s ease-in;
 }
