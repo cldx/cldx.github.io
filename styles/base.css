@@ -40,7 +40,7 @@ header h1 {
   font-weight: 300;
   padding: 100px;
   text-align: center;
-  color: #f8fbd4;
+  color: #f6f6f6;
   text-shadow: 0px 3px 0px rgb(41, 41, 41);
   -webkit-text-shadow: 0px 3px 0px rgb(41, 41, 41);
   -moz-text-shadow: 0px 3px 0px rgb(41, 41, 41);
@@ -53,7 +53,7 @@ header h1 {
 
 #social h2 {
   text-align: center;
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 
 img.social-link{ height:32px; width:32px; padding:30px 40px;}
@@ -89,7 +89,7 @@ footer p {
   line-height: 0.8em;
   font-weight: 300;
   padding: 3em;
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 .info-box p {
   font-size: 1.6em;
@@ -102,20 +102,20 @@ i {
   text-decoration: none;
 }
 a {
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 #vita-wrapper a {
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 a:active {
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 a:visited {
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 a:hover,
 a:focus {
-  color: #f8fbd4;
+  color: #f6f6f6;
 }
 #bg {
   position: fixed;
@@ -179,7 +179,7 @@ background-repeat:none;
   background: #373b44;
 }
 #vita-wrapper {
-  background: #f8fbd4;
+  background: #f6f6f6;
 }
 /* Triangle Wrappers *********************************************************/
 #content-top-wrapper,
@@ -199,7 +199,7 @@ background-repeat:none;
 .left,
 .right {
   height: 80px;
-  background: #f8fbd4;
+  background: #f6f6f6;
   width: 50%;
 }
 #content-bottom-wrapper .left,
@@ -212,7 +212,7 @@ background-repeat:none;
 }
 #vita-top-wrapper .left,
 #vita-top-wrapper .right {
-  background: #f8fbd4;
+  background: #f6f6f6;
 }
 .top-left,
 .top-right,
@@ -224,49 +224,49 @@ background-repeat:none;
 .top-left {
   border-top: 41px solid rgba(255, 255, 255, 0);
   border-right: 41px solid rgba(255, 255, 255, 0);
-  border-left: 40px solid #f8fbd4;
-  border-bottom: 40px solid #f8fbd4;
+  border-left: 40px solid #f6f6f6;
+  border-bottom: 40px solid #f6f6f6;
 }
 #sketchbook-top-wrapper .top-left {
-  border-top: 41px solid #f8fbd4;
-  border-right: 41px solid #f8fbd4;
+  border-top: 41px solid #f6f6f6;
+  border-right: 41px solid #f6f6f6;
   border-left: 40px solid #373b44;
   border-bottom: 40px solid #373b44;
 }
 #vita-top-wrapper .top-left {
   border-top: 41px solid #373b44;
   border-right: 41px solid #373b44;
-  border-left: 40px solid #f8fbd4;
-  border-bottom: 40px solid #f8fbd4;
+  border-left: 40px solid #f6f6f6;
+  border-bottom: 40px solid #f6f6f6;
 }
 .top-right {
   border-top: 40px solid rgba(255, 255, 255, 0);
-  border-right: 41px solid #f8fbd4;
+  border-right: 41px solid #f6f6f6;
   border-left: 40px solid rgba(255, 255, 255, 0);
-  border-bottom: 41px solid #f8fbd4;
+  border-bottom: 41px solid #f6f6f6;
 }
 #sketchbook-top-wrapper .top-right {
-  border-top: 41px solid #f8fbd4;
+  border-top: 41px solid #f6f6f6;
   border-right: 41px solid #373b44;
-  border-left: 40px solid #f8fbd4;
+  border-left: 40px solid #f6f6f6;
   border-bottom: 40px solid #373b44;
 }
 #vita-top-wrapper .top-right {
   border-top: 41px solid #373b44;
-  border-right: 41px solid #f8fbd4;
+  border-right: 41px solid #f6f6f6;
   border-left: 40px solid #373b44;
-  border-bottom: 40px solid #f8fbd4;
+  border-bottom: 40px solid #f6f6f6;
 }
 .bottom-left {
-  border-top: 41px solid #f8fbd4;
-  border-right: 41px solid #f8fbd4;
+  border-top: 41px solid #f6f6f6;
+  border-right: 41px solid #f6f6f6;
   border-left: 40px solid rgba(255, 255, 255, 0);
   border-bottom: 40px solid rgba(255, 255, 255, 0);
 }
 .bottom-right {
-  border-top: 41px solid #f8fbd4;
+  border-top: 41px solid #f6f6f6;
   border-right: 41px solid rgba(255, 255, 255, 0);
-  border-left: 40px solid #f8fbd4;
+  border-left: 40px solid #f6f6f6;
   border-bottom: 40px solid rgba(255, 255, 255, 0);
 }
 
@@ -304,7 +304,7 @@ background-repeat:none;
 }
 .tilespot:hover img,
 .tilespot a:focus img {
-  border-color: #f8fbd4;
+  border-color: #f6f6f6;
   box-shadow: 0px 10px 1px 0px #2c2f36;
   transform: translateY(-10px) rotateX(10deg);
 }
@@ -391,7 +391,7 @@ background-repeat:none;
   z-index: 5000;
   position:absolute;
   top:24px;
-  right:128px;
+  right:24px;
   transition: all 0.2s ease-in-out;
 }
 .closeBox:hover {
