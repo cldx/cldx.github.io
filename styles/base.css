@@ -2,7 +2,7 @@
 /* Fonts **********************************************************************/
 /* Site Wide Settings ********************************************************** */
 body {
-  font-family: Georgia, Palatino, Times New Roman, serif;
+  font-family: "Open Sans", Palatino, Times New Roman, serif;
   line-height: 1.2em;
   font-weight: 300;
   color: #373b44;
@@ -11,14 +11,15 @@ header,
 nav,
 article,
 #social,
+#sketchbook-wrapper,
 .morePosts,
 .tilerow,
 .album-header {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
-  min-width: 320px;
-  padding: 10px 0px 20px 0px;
+  min-width: 240px;
+  padding: 20px 0px 20px 0px;
   clear: both;
   display: block;
 }
@@ -49,28 +50,28 @@ header h1 {
 
 .hidden{ display:none; }
 
-#sketchbook-wrapper h1 {
-  color: #f8fbd4;s
-}
+
 #social h2 {
   text-align: center;
   color: #f8fbd4;
 }
+
 img.social-link{ height:32px; width:32px; padding:30px 40px;}
-
 img.section-image { border-radius: 24px; max-width:300px; margin:48px; }
-
 img.intro-image { float:left; }
 img.vita-image { float:right; }
-/* the following class is full of fail */
+
+
 article {
   padding-top: 60px;
   padding-bottom: 80px;
 }
+
 article section {
   -webkit-column-count: 2;
   -moz-column-count: 2;
 }
+
 p {
   font-family: "Open Sans";
   font-size: 1.2em;
@@ -168,10 +169,9 @@ background-repeat:none;
   /*?*/
 }
 #article-wrapper,
-#sketchbook-wrapper,
 #vita-wrapper {
   width: 100%;
-  background: #f8fbd4;
+  background: #f6f6f6;
   max-width: 100%;
   padding-bottom: 140px;
 }
@@ -271,21 +271,15 @@ background-repeat:none;
 }
 
 /* Gallery stuff *************************************************************/
-.tilerow {
-  display: block;
-  width: 100%;
-  height: 180px;
-  display: table;
-}
 
 .tilespot,
 .spot,
 .tile {
-  height: 180px;
+  height: 240px;
   width: 240px;
 }
 .tilespot {
-  display: table-cell;
+  float:right;
 }
 .spot {
   position: relative;
@@ -497,14 +491,13 @@ footer {
   article,
   .morePosts,
   #social,
-  #sketchbook-wrapper section,
   #vita-wrapper h1 {
     max-width: auto;
     min-width: auto;
   }
 
   header h1 {
-    font-size: 1.8em;
+    font-size: 3em;
     font-weight: 300;
     padding: 0px;
     margin: 10px 0px 10px 0px;
@@ -513,37 +506,29 @@ footer {
   .flip-container {
     margin: 80px 76px;
   }
+
   .infobox {
     width: 100px;
   }
-  .tilespot,
-  .spot,
-  .tile {
-    height: 192px;
-    width: 192px;
-  }
-  .tilerow {
-    height: 192px;
-    width: 100%;
-  }
-  .tile img {
-    height: 100px;
-    width: 100px;
-  }
+#sketchbook-wrapper{
+  max-width: 720px;
+}
+
 }
 /* "retina" displays (4K) */
 /* mobiles */
 @media only all and (min-width: 240px) and (max-width: 768px) {
+
   header,
   nav,
   article,
   .morePosts,
   #social,
-  #sketchbook-wrapper section,
   #vita-wrapper h1 {
     max-width: auto;
     min-width: auto;
   }
+
   h1,
   h2 {
     font-size: 1.4em;
@@ -553,7 +538,7 @@ footer {
 	text-align:center;
   }
   header h1 {
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 300;
     padding: 0px;
     margin: 10px 0px 10px 0px;
@@ -564,6 +549,7 @@ footer {
     padding: 0px;
     margin: 4px 16px;
   }
+
   article section {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -576,43 +562,15 @@ footer {
 	
 	}
 
-  .tilespot{
-    height: 100%;
-    width: 25%;
-	
-	}
-  .spot,
-  .tile {
-    height: 100%;
-    width: 100%;
-
-  }
-  .tilerow {
-    height: 80px;
-    width: 100%;
-    padding:0px;	
-  }
-  .tile img {
-    width: 100%;
-	border-radius:0px;
-	border:0px;
-	margin:0%;
-	padding:0px;
-  }
-.tilespot:hover img,
-.tilespot a:focus img {
-  border-color: #f8fbd4;
-  box-shadow: none;
-  transform: none;
-}
-
   #social img{
 	padding:10px;
   }
-#article-wrapper,
-#sketchbook-wrapper,
-#vita-wrapper {
-  padding-bottom: 40px;
+#sketchbook-wrapper{
+  max-width: 480px;
 }
 }
-
+@media only all and (min-width: 240px) and (max-width: 480px) {
+#sketchbook-wrapper{
+  max-width: 240px;
+}
+}
