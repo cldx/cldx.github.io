@@ -75,8 +75,10 @@
 		
 		$(document).on('click', '.tile a', function(){ 
 				updateDarkbox($(this));
+				$('body').css('overflow', 'hidden');
 				showDarkbox();
 				return false;
+				
 		}); 
 		
 	
@@ -84,6 +86,7 @@
 		$(".closeBox").click(function(){
 			$(".darkbox").removeClass("showDarkbox").addClass("hideDarkbox");
 			$('.darkbox').css({ 'height': "0%" });
+			$('body').css('overflow', 'initial');
 			$.darkboxProps.initial = true;	
 			});
 			

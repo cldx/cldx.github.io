@@ -413,13 +413,13 @@ background-repeat:none;
 .previous {
   height: 100%;
   width: 50%;
-  background: url("../images/button-back.svg") center center no-repeat;
+  background: url("../images/button-back.svg") left center no-repeat;
   background-size: 32px;
   display: table-cell;
   transition: all 0.2s ease-in-out;
 }
 .previous:hover {
-  background: url("../images/button-back.svg") center center no-repeat;
+  background: url("../images/button-back.svg") left center no-repeat;
   background-size:48px;
   cursor:pointer;
 }
@@ -439,12 +439,12 @@ background-repeat:none;
   height: 100%;
   width: 50%;
   display: table-cell;
-  background: url("../images/button-forward.svg") center center no-repeat;
+  background: url("../images/button-forward.svg") right center no-repeat;
   background-size: 32px;
   transition: all 0.2s ease-in-out;
 }
 .next:hover {
-  background: url("../images/button-forward.svg") center center no-repeat;
+  background: url("../images/button-forward.svg") right center no-repeat;
   background-size: 48px;
   cursor:pointer;
 }
