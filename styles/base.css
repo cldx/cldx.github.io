@@ -485,7 +485,7 @@ footer {
   left: auto;
 }
 /*  a lot of displays still have it, also iPad */
-@media only all and (min-device-width: 480px) and (max-device-width: 1024px) {
+@media only all and (min-width: 480px) and (max-width: 1024px) {
   header,
   nav,
   article,
@@ -527,7 +527,7 @@ footer {
 }
 /* "retina" displays (4K) */
 /* mobiles */
-@media only all and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only all and (min-width: 320px) and (max-width: 480px) {
   header,
   nav,
   article,
