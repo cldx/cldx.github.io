@@ -141,9 +141,9 @@ a:focus {
 background-position: center top;
 -webkit-background-position:center top;
 -moz-background-position:center top;
- background-size: cover;
--webkit-background-size:cover;
--moz-background-size:cover;
+ background-size: 100% auto;
+-webkit-background-size:100% auto;
+-moz-background-size:100% auto;
 background-repeat:none;
  opacity:0;
  transition: opacity 2.5s ease-in;
