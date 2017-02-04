@@ -590,6 +590,7 @@ footer {
   .tilerow {
     height: 80px;
     width: 100%;
+    padding:0px;	
   }
   .tile img {
     width: 100%;
@@ -598,6 +599,13 @@ footer {
 	margin:0%;
 	padding:0px;
   }
+.tilespot:hover img,
+.tilespot a:focus img {
+  border-color: #f8fbd4;
+  box-shadow: none;
+  transform: none;
+}
+
   #social img{
 	padding:10px;
   }
