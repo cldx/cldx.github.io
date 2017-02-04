@@ -576,11 +576,15 @@ footer {
 	
 	}
 
-  .tilespot,
+  .tilespot{
+    height: 100%;
+    width: 25%;
+	
+	}
   .spot,
   .tile {
     height: 100%;
-    width: 25%;
+    width: 100%;
 
   }
   .tilerow {
