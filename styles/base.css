@@ -134,9 +134,10 @@ a:focus {
 }
 
 .bg-image {
- position:fixed;	
+ position:fixed;
+ top:0;
  width:100%;
- height:100%;
+ height:500px;
 background-position: center top;
 -webkit-background-position:center top;
 -moz-background-position:center top;
