@@ -55,7 +55,7 @@ article {
   padding-bottom: 60px;
 }
 
-article section {
+.columned {
   -webkit-column-count: 2;
   -moz-column-count: 2;
 }
@@ -85,6 +85,9 @@ a,i {
   text-decoration: none;
 }
 
+footer a, footer a:visited, footer a:active, footer a:hover, footer a:focus{
+    color:#f6f6f6;
+}
 a:active, a:visited {
   color: #373b44;
 }
