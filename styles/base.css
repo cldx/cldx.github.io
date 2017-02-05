@@ -1,20 +1,15 @@
 /* Colors *********************************************************************/
 /* Fonts **********************************************************************/
 /* Site Wide Settings ********************************************************** */
-body {
+body{
   font-family: "Raleway", Palatino, Times New Roman, serif;
   line-height: 1.2em;
   font-weight: 300;
   color: #373b44;
+  background: #373b44 url("../images/noise.png");
 }
-header,
-nav,
-article,
-#social,
-#sketchbook-wrapper,
-.morePosts,
-.tilerow,
-.album-header {
+
+header, nav, article, #social, #sketchbook-wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
@@ -23,9 +18,9 @@ article,
   clear: both;
   display: block;
 }
-h1,
-h2 {
-  font-family: "Open Sans";
+
+h1,h2 {
+  font-family: "Raleway";
   font-weight: 300;
   font-size: 2.4em;
   line-height: 2.4em;
@@ -33,7 +28,9 @@ h2 {
   color: #373b44;
 }
 
-img {  border: 0; }
+img {  
+  border: 0; 
+}
 
 header h1 {
   font-size: 4em;
@@ -44,27 +41,18 @@ header h1 {
   text-shadow: 0px 3px 0px rgb(41, 41, 41);
   -webkit-text-shadow: 0px 3px 0px rgb(41, 41, 41);
   -moz-text-shadow: 0px 3px 0px rgb(41, 41, 41);
-
-	
-}
-
-.hidden{ display:none; }
-
-
-#social h2 {
-  text-align: center;
-  color: #f6f6f6;
 }
 
 img.social-link{ height:32px; width:32px; padding:30px 40px;}
-img.section-image { border-radius: 24px; max-width:300px; margin:48px; }
+img.section-image { border-radius: 12px; max-width:300px; margin:48px; }
+
 img.intro-image { float:left; }
 img.vita-image { float:right; }
 
 
 article {
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 article section {
@@ -72,18 +60,19 @@ article section {
   -moz-column-count: 2;
 }
 
-p {
-  font-family: "Open Sans";
+p,ul {
+  font-family: "Raleway";
   font-size: 1.2em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-weight: 300;
   padding: 0.4em;
   color: #373b44;
 }
 
-p.center {
+.center {
   text-align: center;
 }
+
 footer p {
   font-size: 0.8em;
   line-height: 1.2em;
@@ -91,32 +80,19 @@ footer p {
   padding: 3em;
   color: #f6f6f6;
 }
-.info-box p {
-  font-size: 1.6em;
-}
 
-a,
-i {
-  font-weight: normal;
-  color: #373b44;
+a,i {
   text-decoration: none;
 }
-a {
-  color: #f6f6f6;
+
+a:active, a:visited {
+  color: #373b44;
 }
-#vita-wrapper a {
-  color: #f6f6f6;
+
+a:hover,a:focus {
+  color: #787a80;
 }
-a:active {
-  color: #f6f6f6;
-}
-a:visited {
-  color: #f6f6f6;
-}
-a:hover,
-a:focus {
-  color: #f6f6f6;
-}
+/*
 #bg {
   position: fixed;
   top: 0px;
@@ -128,6 +104,7 @@ a:focus {
   background: #373b44 url("../images/noise.png");
   z-index: -1;
 }
+*/
 #slideshow {
   position: fixed;
   top: 0px;
@@ -545,7 +522,7 @@ footer {
   p {
     font-size: 1.2em;
     line-height: 1.2em;
-    padding: 0px;
+    padding: 0.4em;
     margin: 4px 16px;
   }
 
