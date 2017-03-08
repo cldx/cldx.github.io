@@ -24,7 +24,7 @@ h1,h2,h3 {
     font-weight: 300;
     font-size: 2.4em;
     line-height: 2.4em;
-    padding: 12px 20px;
+    padding: 12px 30px;
     margin:0px 0px;
     color: #373b44;
     text-shadow: 0px 3px 0px #cccccc;
@@ -60,9 +60,10 @@ p,ul {
     font-size: 1.2em;
     line-height: 1.2em;
     font-weight: 300;
-    padding: 2px 20px;
-    margin: 0px 0px;
+    padding: 0px 0px;
+    margin: 2px 30px 10px;
     color: #373b44;
+    text-align:justify;
 }
 
 a, a:active, a:visited {
@@ -88,7 +89,9 @@ footer p {
 
 img.section-image { 
     border-radius: 12px;
-    max-width:300px; margin:48px;
+    max-width:300px; 
+    padding: 0px 0px;
+    margin:2px 2px 20px 20px;
     box-shadow: 0px 8px 0px 0px #cccccc;
 }
 
@@ -107,8 +110,8 @@ img.vita-image {
 }
 
 .columned {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
 }
 
 .center {
@@ -156,6 +159,10 @@ img.vita-image {
 }
 
 /*Wrappers******************************************************************************************/
+#article-wrapper, #vita-wrapper, #sketchbook-wrapper{
+    padding:40px 0px;
+}
+
 #content-wrapper {
     height: 100%;
     width: 100%;
@@ -167,7 +174,6 @@ img.vita-image {
     width: 100%;
     background: #f6f6f6;
     max-width: 100%;
-    padding-bottom: 140px;
 }
 
 #sketchbook-wrapper {
@@ -397,7 +403,7 @@ img.vita-image {
     border-radius: 100%;
     z-index: 5000;
     position:absolute;
-    top:24px;
+    bottom:24px;
     right:24px;
     transition: all 0.2s ease-in-out;
 }
@@ -419,7 +425,7 @@ img.vita-image {
 }
 
 .container-wrapper{
-    background: #0b0c0e;
+    background: #0b0c0e url("../images/throbber-48px.gif") center center no-repeat;
     box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.45);
   }
 
@@ -427,14 +433,14 @@ img.vita-image {
 .previous {
     height: 100%;
     width: 50%;
-    background: url("../images/button-back.svg") left center no-repeat;
+    background: url("../images/button-back.svg") 20% center no-repeat;
     background-size: 32px;
     display: table-cell;
     transition: all 0.2s ease-in-out;
 }
 
 .previous:hover {
-    background: url("../images/button-back.svg") left center no-repeat;
+    background: url("../images/button-back.svg") 20% center no-repeat;
     background-size:48px;
     cursor:pointer;
 }
@@ -458,13 +464,13 @@ img.vita-image {
     height: 100%;
     width: 50%;
     display: table-cell;
-    background: url("../images/button-forward.svg") right center no-repeat;
+    background: url("../images/button-forward.svg") 80% center no-repeat;
     background-size: 32px;
     transition: all 0.2s ease-in-out;
 }
 
 .next:hover {
-    background: url("../images/button-forward.svg") right center no-repeat;
+    background: url("../images/button-forward.svg") 80% center no-repeat;
     background-size: 48px;
     cursor:pointer;
 }
@@ -502,20 +508,25 @@ footer {
         line-height: 1.4em;
     }
 
-    h3 {font-size: 1.2em; }
+    h3 {
+        font-size: 1.2em; 
+    }
 
+    #article-wrapper article, #vita-wrapper article{
+        max-width:96%;
+    }
 }
 
-@media only all and (min-width: 0px) and (max-width: 768px) {
+@media only all and (min-width: 0px) and (max-width: 640px) {
     h1, h2, h3 {
         text-align:center;
     }
-
 	img.intro-image, img.vita-image { 
     	float:none;
-    	max-width:80%;
+    	max-width:50%;
     	margin:10px 0px;
 	}
+
 }
 
 /* Display 768-1024px width */
