@@ -50,10 +50,40 @@ header h1 {
     -moz-text-shadow: 0px 3px 0px rgb(41, 41, 41);
 }
 
-.social-link{ 
-    height:32px; 
-    width:32px; 
-    padding:30px 40px;
+article {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+p,ul {
+    font-family: "Raleway";
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 300;
+    padding: 2px 20px;
+    margin: 0px 0px;
+    color: #373b44;
+}
+
+a, a:active, a:visited {
+    color: #2d6e94;
+    text-decoration:none:
+}
+
+a:hover,a:focus {
+    text-decoration:underline;
+}
+
+a,i {
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-weight: 300;
+    padding: 3em;
+    color: #f6f6f6;
 }
 
 img.section-image { 
@@ -70,10 +100,10 @@ img.vita-image {
     float:right;
 }
 
-
-article {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.social-link{ 
+    height:32px; 
+    width:32px; 
+    padding:30px 40px;
 }
 
 .columned {
@@ -81,64 +111,8 @@ article {
     -moz-column-count: 2;
 }
 
-p,ul {
-    font-family: "Raleway";
-    font-size: 1.2em;
-    line-height: 1.2em;
-    font-weight: 300;
-    padding: 2px 20px;
-    margin: 0px 0px;
-    color: #373b44;
-}
-
 .center {
     text-align: center;
-}
-
-footer p {
-    font-size: 0.8em;
-    line-height: 1.2em;
-    font-weight: 300;
-    padding: 3em;
-    color: #f6f6f6;
-}
-
-a, footer a,i {
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-}
-
-a, a:active, a:visited {
-    color: #2d6e94;
-}
-
-a:hover,a:focus {
-    color: #b8d5eb;
-}
-
-
-footer a, footer a:active, footer a:visited{
-    color:#b8d5eb;
-}
-
-footer a:hover, footer a:focus{
-    color: #2d6e94;
-}
-
-#social a:hover{
-    opacity:0.5;
-    transition: opacity 0.4s ease-in-out;
-}
-
-#slideshow {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 1000px;
-    z-index: -1;
 }
 
 .bg-image {
@@ -163,6 +137,22 @@ footer a:hover, footer a:focus{
 
 .long{
     width:auto;
+}
+
+#social a:hover{
+    opacity:0.5;
+    transition: opacity 0.4s ease-in-out;
+}
+
+#slideshow {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
 }
 
 /*Wrappers******************************************************************************************/
@@ -331,36 +321,37 @@ footer a:hover, footer a:focus{
 /* Darkbox Stuff ***************************************************************/
 @keyframes slide-in {
   0% {
-    opacity: 0;
-    height: 100%;
-    transform: scale(0) originX(-400);
-  }
-  80% {
     opacity: 1;
     height: 100%;
-    transform: scale(0.9);
+    transform: translate(0px, -2000px) ;
   }
+  50% {
+    opacity: 1;
+    height: 100%;
+    transform: translate(0px, -2000px) ;
+  }
+
   100% {
     opacity: 1;
     height: 100%;
-    transform: scale(1);
+    transform: translate(0px, 0px);
   }
 }
 @keyframes slide-out {
   0% {
     opacity: 1;
     height: 100%;
-    transform: scale(1);
+    transform: translate(0px, 0px);
   }
-  70% {
+  30% {
     opacity: 1;
     height: 100%;
-    transform: scale(0.9);
+    transform: translate(0px, 0px);
   }
   100% {
-    opacity: 0;
-    height: 0%;
-    transform: scale(0);
+    opacity: 1;
+    height: 100%;
+    transform: translate(0px, -2000px);
   }
 }
 
@@ -381,19 +372,19 @@ footer a:hover, footer a:focus{
     display: block;
     height: 100%;
     top:0;
-    -webkit-animation: slide-in 0.9s ease-in-out;
-    -moz-animation: slide-in 0.9s ease-in-out;
-    -o-animation: slide-in 0.9s ease-in-out;
-    animation: slide-in 0.9s ease-in-out;
+    -webkit-animation: slide-in 1s ease-out;
+    -moz-animation: slide-in 1s ease-out;
+    -o-animation: slide-in 1s ease-out;
+    animation: slide-in 1s ease-out;
     opacity: 1;
 }
 
 .hideDarkbox {
     z-index:1000;
-    -webkit-animation: slide-out 0.8s ease-in;
-    -moz-animation: slide-out 0.8s ease-in;
-    -o-animation: slide-out 0.8s ease-in;
-    animation: slide-out 0.8s ease-in;
+    -webkit-animation: slide-out 0.9s ease-in-out;
+    -moz-animation: slide-out 0.9s ease-in-out;
+    -o-animation: slide-out 0.9s ease-in-out;
+    animation: slide-out 0.9s ease-in-out;
     opacity: 0;
     height: 0%;	
 }
@@ -420,7 +411,7 @@ footer a:hover, footer a:focus{
 .container-wrapper, .navigation-wrapper {
     position:absolute;
     width: 96%;
-    height: 96%;
+    height: 94%;
     display: table;
     margin: 2%;
     border: 0px solid #fff;
@@ -428,7 +419,8 @@ footer a:hover, footer a:focus{
 }
 
 .container-wrapper{
-    background: rgba(0,0,0,0.95);
+    background: #0b0c0e;
+    box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.45);
   }
 
 
@@ -455,10 +447,11 @@ footer a:hover, footer a:focus{
 }
 
 .imageBox {
-  margin-left: auto;
-  margin-right: auto;
-  height: 96%;
-  width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    width: 96%;
+    border-radius:12px;  
 }
 
 .next {

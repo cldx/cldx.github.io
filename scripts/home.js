@@ -75,7 +75,7 @@
 		
 		$(document).on('click', '.tile a', function(){ 
 				updateDarkbox($(this));
-				$('body').css('overflow', 'hidden');
+				//$('body').css('overflow', 'hidden');
 				showDarkbox();
 				return false;
 				
