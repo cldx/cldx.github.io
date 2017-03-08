@@ -566,7 +566,7 @@ p,ul{  padding: 0.4em 2em; }
 
 }
 }
-@media only all and (min-width: 240px) and (max-width: 480px) {
+@media only all and (min-width: 240px) and (max-width: 500px) {
 p,ul{  padding: 0.4em 2em; }
 .tilespot,.spot,.tile{ width:200px;height:200px; }
 .tile img { margin:10px;}
@@ -577,4 +577,11 @@ p,ul{  padding: 0.4em 2em; }
 #sketchbook-wrapper{
   max-width: 400px;
 }
+}
+@media only all and (min-width: 240px) and (max-width: 400px){
+.tilespot,.spot,.tile{ width:240px;height:240px; }
+.tile img { margin:20px;}
+    #sketchbook-wrapper{
+        max-width: 240px;
+    }   
 }
