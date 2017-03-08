@@ -475,6 +475,7 @@ footer {
 }
 /*  a lot of displays still have it, also iPad */
 @media only all and (min-width: 768px) and (max-width: 1024px) {
+
 .columned{
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -513,7 +514,8 @@ footer {
 }
 /* "retina" displays (4K) */
 /* mobiles */
-@media only all and (min-width: 240px) and (max-width: 768px) {
+@media only all and (min-width: 480px) and (max-width: 768px) {
+
 p,ul{  padding: 0.4em 2em; }
   header,
   nav,
@@ -566,22 +568,30 @@ p,ul{  padding: 0.4em 2em; }
 
 }
 }
-@media only all and (min-width: 240px) and (max-width: 500px) {
+@media only all and (min-width: 320px) and (max-width: 480px) {
+
 p,ul{  padding: 0.4em 2em; }
-.tilespot,.spot,.tile{ width:200px;height:200px; }
-.tile img { margin:10px;}
+.tilespot,.spot,.tile{ width:160px;height:160px; }
+.tile img { margin:10px; width:140px; height:140px; }
 .columned{
     -webkit-column-count: 1;
     -moz-column-count: 1;
   }
 #sketchbook-wrapper{
-  max-width: 400px;
+  max-width: 320px;
 }
 }
-@media only all and (min-width: 240px) and (max-width: 400px){
-.tilespot,.spot,.tile{ width:240px;height:240px; }
-.tile img { margin:20px;}
+@media only all and (min-width: 240px) and (max-width: 320px){
+/*#sketchbook-wrapper {
+  background: #cb5687;
+}*/
+.tilespot,.spot,.tile{ width:120px;height:120px; }
+.tile img { margin:10px; width:100px;height:100px;}
     #sketchbook-wrapper{
         max-width: 240px;
-    }   
+    }  
+.columned{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+  } 
 }
