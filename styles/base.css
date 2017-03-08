@@ -41,7 +41,8 @@ img {
 header h1 {
     font-size: 4em;
     font-weight: 300;
-    padding: 100px;
+    padding: 0px;
+    margin:100px 0px;
     text-align: center;
     color: #f6f6f6;
     text-shadow: 0px 3px 0px rgb(41, 41, 41);
@@ -484,36 +485,6 @@ footer {
     position: relative;
 }
 
-/*.gplus-box {
-    height: 24px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 24px;
-}
-
-.about-box {
-    height: 48px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 24px;
-    bottom: 0;
-    left: auto;
-}
-
-.html5-box {
-    height: 27px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 96px;
-    bottom: 0;
-    left: auto;
-}*/
-
 /* All Displays below 1024px width */
 @media only all and (min-width: 0px) and (max-width: 1024px) {
     .columned{
@@ -530,11 +501,11 @@ footer {
         font-size: 3em;
         font-weight: 300;
         padding: 0px;
-        margin: 10px 0px 10px 0px;
+        margin: 60px 0px;
     }
 
     h1, h2, h3 {
-        font-size: 1.4em;
+        font-size: 2em;
         line-height: 1.4em;
     }
 
@@ -555,7 +526,7 @@ footer {
 }
 
 /* Display 768-1024px width */
-@media only all and (min-width: 768px) and (max-width: 1024px) {
+@media only all and (min-width: 778px) and (max-width: 1024px) {
 
     #sketchbook-wrapper{
         max-width: 720px;
@@ -564,11 +535,7 @@ footer {
 }
 
 /* Display 480-768px width */
-@media only all and (min-width: 480px) and (max-width: 768px) {
-
-    #social img{
-        padding:10px;
-    }
+@media only all and (min-width: 490px) and (max-width: 778px) {
 
     #sketchbook-wrapper{
         max-width: 480px;
@@ -576,7 +543,7 @@ footer {
 }
 
 /* Display 320-480px width */
-@media only all and (min-width: 320px) and (max-width: 480px) {
+@media only all and (min-width: 330px) and (max-width: 490px) {
 
 .tilespot,.spot,.tile{ width:160px;height:160px; }
 .tile img { margin:10px; width:140px; height:140px; }
@@ -587,7 +554,7 @@ footer {
 }
 
 /* Display 240-320px width */
-@media only all and (min-width: 240px) and (max-width: 320px){
+@media only all and (min-width: 240px) and (max-width: 330px){
 
 .tilespot,.spot,.tile{ width:120px;height:120px; }
 .tile img { margin:10px; width:100px;height:100px;}
