@@ -26,6 +26,7 @@ h1,h2 {
   line-height: 2.4em;
   padding: 10px;
   color: #373b44;
+  text-shadow: 0px 3px 0px #cccccc;
 }
 
 img {  
@@ -43,8 +44,8 @@ header h1 {
   -moz-text-shadow: 0px 3px 0px rgb(41, 41, 41);
 }
 
-img.social-link{ height:32px; width:32px; padding:30px 40px;}
-img.section-image { border-radius: 12px; max-width:300px; margin:48px; }
+.social-link{ height:32px; width:32px; padding:30px 40px;}
+img.section-image { border-radius: 12px; max-width:300px; margin:48px;  box-shadow: 0px 8px 0px 0px #cccccc; }
 
 img.intro-image { float:left; }
 img.vita-image { float:right; }
@@ -81,20 +82,33 @@ footer p {
   color: #f6f6f6;
 }
 
-a,i {
+a, footer a,i {
   text-decoration: none;
+  transition: all 0.4s ease-in-out;
 }
 
-footer a, footer a:visited, footer a:active, footer a:hover, footer a:focus{
-    color:#f6f6f6;
-}
-a:active, a:visited {
-  color: #373b44;
+a, a:active, a:visited {
+  color: #2d6e94;
 }
 
 a:hover,a:focus {
-  color: #787a80;
+  color: #b8d5eb;
 }
+
+
+footer a, footer a:active, footer a:visited{
+    color:#b8d5eb;
+}
+
+footer a:hover, footer a:focus{
+  color: #2d6e94;
+}
+
+#social a:hover{
+ opacity:0.5;
+ transition: opacity 0.4s ease-in-out;
+}
+
 /*
 #bg {
   position: fixed;
@@ -137,6 +151,10 @@ background-repeat:none;
 
 .active{
  opacity:1;
+}
+
+.long{
+width:auto;
 }
 
 /*Wrappers******************************************************************************************/
@@ -272,11 +290,11 @@ background-repeat:none;
   text-align: center;
 }
 .tile img {
-  border: 4px solid #ffffff;
-  box-shadow: 0px 0px 0px 0px #192328;
+  border: 0px solid #cccccc;
+  box-shadow: 0px 4px 0px 0px #192328;
   margin: 20px;
   width: auto;
-  border-radius: 100px;
+  border-radius: 12px;
   pointer-event: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -285,7 +303,7 @@ background-repeat:none;
 .tilespot:hover img,
 .tilespot a:focus img {
   border-color: #f6f6f6;
-  box-shadow: 0px 10px 1px 0px #2c2f36;
+  box-shadow: 0px 10px 0px 0px #192328;
   transform: translateY(-10px) rotateX(10deg);
 }
 /* Darkbox Stuff ***************************************************************/
@@ -333,7 +351,7 @@ background-repeat:none;
  /* height: 0%;*/
   opacity: 0;
   z-index: 1000;
-  background: #000000;
+  background: rgba(0,0,0,0.95);
 }
 .showDarkbox {
   display: block;
