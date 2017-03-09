@@ -369,6 +369,7 @@ img.vita-image {
     bottom: 0;
     width: 100%;
     opacity: 0;
+    height:0%;
     z-index: -1000;
     background: rgba(0,0,0,0.0);
 }
@@ -398,19 +399,72 @@ img.vita-image {
 .closeBox {
     background: url("../images/button-close.svg") center center no-repeat;
     background-size: 16px;
-    height: 32px;
-    width: 32px;
+    height: 48px;
+    width: 48px;
     border-radius: 100%;
     z-index: 5000;
-    position:absolute;
-    bottom:24px;
-    right:24px;
+    position:relative;
     transition: all 0.2s ease-in-out;
+    float:right;
 }
 
 .closeBox:hover {
     background: url("../images/button-close.svg") center center no-repeat;
     background-size: 24px;
+    cursor:pointer;
+}
+
+.shareButton {
+    background: url("../images/button-share.svg") center center no-repeat;
+    background-size: 16px;
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    z-index: 5000;
+    position:relative;
+    transition: all 0.2s ease-in-out;
+    float:right;
+}
+
+.shareButton:hover {
+    background: url("../images/button-share.svg") center center no-repeat;
+    background-size: 24px;
+    cursor:pointer;
+}
+
+.previousButton{
+    background: url("../images/button-back.svg") center center no-repeat;
+    background-size:24px;
+    height:48px;
+    width:48px;
+    border-radius: 100%;
+    z-index:5001;
+    position:relative;
+    transition: all 0.2s ease-in-out;
+    float:left;
+}
+
+.previousButton:hover {
+    background: url("../images/button-back.svg") center center no-repeat;
+    background-size:32px;
+    cursor:pointer;
+}
+
+.nextButton{
+    background: url("../images/button-forward.svg") center center no-repeat;
+    background-size:24px;
+    height:48px;
+    width:48px;
+    border-radius: 100%;
+    z-index:5002;
+    position:relative;
+    transition: all 0.2s ease-in-out;
+    float:left; 
+}
+
+.nextButton:hover {
+    background: url("../images/button-forward.svg") center center no-repeat;
+    background-size: 32px;
     cursor:pointer;
 }
 
@@ -433,15 +487,16 @@ img.vita-image {
 .previous {
     height: 100%;
     width: 50%;
-    background: url("../images/button-back.svg") 20% center no-repeat;
-    background-size: 32px;
     display: table-cell;
-    transition: all 0.2s ease-in-out;
+    background: url("../images/button-back.svg") 20% center no-repeat;
+    background-size:20%;
+    opacity:0;
 }
-
 .previous:hover {
     background: url("../images/button-back.svg") 20% center no-repeat;
-    background-size:48px;
+    background-size:20%;
+    opacity:0.1;
+    transition: all 0.2s ease-in-out;
     cursor:pointer;
 }
 
@@ -452,10 +507,20 @@ img.vita-image {
     vertical-align: middle;
 }
 
+.toolbar {
+    height:48px;
+    width:100%;
+    display:table-row;
+}
+
+/*.toolbar div{
+    margin:8px;
+}*/
+
 .imageBox {
     margin-left: auto;
     margin-right: auto;
-    height: 90%;
+    height: 86%;
     width: 96%;
     border-radius:12px;  
 }
@@ -465,15 +530,17 @@ img.vita-image {
     width: 50%;
     display: table-cell;
     background: url("../images/button-forward.svg") 80% center no-repeat;
-    background-size: 32px;
-    transition: all 0.2s ease-in-out;
+    background-size:20%;
+    opacity:0;
 }
-
 .next:hover {
     background: url("../images/button-forward.svg") 80% center no-repeat;
-    background-size: 48px;
+    background-size:20%;
+    opacity:0.1;
+    transition: all 0.2s ease-in-out;
     cursor:pointer;
 }
+
 
 /* Footer ************************************************************************** */
 footer {

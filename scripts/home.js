@@ -83,15 +83,15 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		$(".closeBox").click(function(){
 			$(".darkbox").removeClass("showDarkbox").addClass("hideDarkbox");
 			$('.darkbox').css({ 'height': "0%" });
-			$('body').css('overflow', 'initial');
+			//$('body').css('overflow', 'initial');
 			$.darkboxProps.initial = true;	
 			});
 			
-		$(".previous").click(function(){
+		$(".previous, .previousButton").click(function(){
 				updateDarkbox($.darkboxProps.previousImage);
 			});
 		
-		$(".next").click(function(){
+		$(".next, .nextButton").click(function(){
 				updateDarkbox($.darkboxProps.nextImage);
 			});
 		
