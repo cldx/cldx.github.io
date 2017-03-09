@@ -67,7 +67,7 @@
 		
 		$(".closeBox").click(function(){
 			$(".darkbox").removeClass("showDarkbox").addClass("hideDarkbox");
-			$('.darkbox').css({ 'height': "0%" });
+			$('.darkbox').css({ 'height': "0%"});
 			$('body').css('overflow', 'initial');
 			$.darkboxProps.initial = true;	
 			});
