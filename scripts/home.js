@@ -1,7 +1,20 @@
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
 
 
      $(document).ready(function(){
-
 
 
 		$.darkboxProps = new Object();
@@ -14,14 +27,18 @@
 		
 		$.Collection = new Object();
 		$.Albums = new Array("Sketchbook","Pencil","Color","Illustration","Miscellaneous","Wallpapers");
-		
-		$("#article-wrapper article").css("display","none");
-		$("#article-wrapper article:first").css("display","block");
 
 		//we'll be needing this
 		var anchor = window.location.hash;
         //alert(anchor);
-
+		var urlparams = getUrlParameter("ID");
+		if(urlparams != undefined && urlparams != true && urlparams != ""){ 
+			var linkObj = $( "#"+urlparams+" a" );
+			if(linkObj.length != 0){
+				updateDarkbox(linkObj);
+				showDarkbox();
+			}	
+		}
 		
 		function showDarkbox(){
 			var $win = $(window);
@@ -54,24 +71,6 @@
 			$.darkboxProps.nextImage = next;
 				
 			}
-/*
-		$(".nextPost").toggle(
-			function(){
-				$("#article-wrapper article").css("display","block");
-				$(".morePostsButton").addClass("minus");
-				$(this).attr("title", "Hide older Posts");
-				return false;
-					},
-			function(){
-				$("#article-wrapper article").css("display","none");
-				$("#article-wrapper article:first").css("display","block");
-				$(".morePostsButton").removeClass("minus");
-				$(this).attr("title", "Show older Posts");
-				return false;
-				}
-		);
-
-*/	
 		
 		$(document).on('click', '.tile a', function(){ 
 				updateDarkbox($(this));
@@ -80,8 +79,6 @@
 				return false;
 				
 		}); 
-		
-	
 		
 		$(".closeBox").click(function(){
 			$(".darkbox").removeClass("showDarkbox").addClass("hideDarkbox");
@@ -105,7 +102,6 @@
     			var current = 1;
 			console.log("Count:"+count);
 		    function nextBackground() {
-			console.log("runnings");
 			$("#slideshow .bg-image").removeClass('active');
 			if(current >= count){ current = 1; }else{ current++; }
 			console.log(current);
