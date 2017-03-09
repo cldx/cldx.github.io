@@ -349,14 +349,20 @@ img.vita-image {
     height: 100%;
     transform: translate(0px, 0px);
   }
-  30% {
+  50% {
     opacity: 1;
     height: 100%;
     transform: translate(0px, 0px);
   }
-  100% {
+  99% {
     opacity: 1;
     height: 100%;
+    transform: translate(0px, -2000px);
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+    display:none;
     transform: translate(0px, -2000px);
   }
 }
@@ -383,7 +389,6 @@ img.vita-image {
     -o-animation: slide-in 1s ease-out;
     animation: slide-in 1s ease-out;
     opacity: 1;
-    display:block;
 }
 
 .hideDarkbox {
@@ -393,8 +398,7 @@ img.vita-image {
     -o-animation: slide-out 0.9s ease-in-out;
     animation: slide-out 0.9s ease-in-out;
     opacity: 0;
-    height: 0%;	
-    display:none;
+    height: 0%;
 }
 
 .closeBox {
