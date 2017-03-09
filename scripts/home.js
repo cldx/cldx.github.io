@@ -126,10 +126,11 @@
 				}	
 			
 		});
-		$(window).bind('touchmove', function(){
+
+		/*$(window).bind('touchmove', function(){
 			var $win = $(window);
 			$('.darkbox').css('top', $win.scrollTop());
-			}); 
+			});*/ 
 		
 		
 		 

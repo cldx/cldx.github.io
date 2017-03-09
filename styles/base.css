@@ -383,6 +383,7 @@ img.vita-image {
     -o-animation: slide-in 1s ease-out;
     animation: slide-in 1s ease-out;
     opacity: 1;
+    display:block;
 }
 
 .hideDarkbox {
@@ -393,6 +394,7 @@ img.vita-image {
     animation: slide-out 0.9s ease-in-out;
     opacity: 0;
     height: 0%;	
+    display:none;
 }
 
 .closeBox {
