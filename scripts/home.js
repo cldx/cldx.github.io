@@ -1,18 +1,3 @@
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-
 
      $(document).ready(function(){
 
@@ -83,7 +68,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		$(".closeBox").click(function(){
 			$(".darkbox").removeClass("showDarkbox").addClass("hideDarkbox");
 			$('.darkbox').css({ 'height': "0%" });
-			//$('body').css('overflow', 'initial');
+			$('body').css('overflow', 'initial');
 			$.darkboxProps.initial = true;	
 			});
 			
@@ -97,6 +82,21 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		
 		});
 
+		var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if (sParameterName[0] === sParam) {
+				    return sParameterName[1] === undefined ? true : sParameterName[1];
+				}
+			}
+		};
+
 		$(function () {
     			var count = $("#slideshow .bg-image").length;
     			var current = 1;
@@ -104,13 +104,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		    function nextBackground() {
 			$("#slideshow .bg-image").removeClass('active');
 			if(current >= count){ current = 1; }else{ current++; }
-			console.log(current);
+			//console.log(current);
 			$("#slideshow .bg-image:nth-child("+current+")").addClass('active');
 			setTimeout(nextBackground, 8000);
 		    }
 
 		    $("#slideshow .bg-image:nth-child(1)").addClass('active');
-		    setTimeout(nextBackground, 8000);
+		    setTimeout(nextBackground, 5000);
 		});
 		
  
@@ -129,7 +129,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 		$(window).bind('touchmove', function(){
 			var $win = $(window);
 			$('.darkbox').css('top', $win.scrollTop());
-			});
+			}); 
 		
 		
 		 

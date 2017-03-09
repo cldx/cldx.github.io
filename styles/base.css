@@ -369,7 +369,6 @@ img.vita-image {
     bottom: 0;
     width: 100%;
     opacity: 0;
-    height:0%;
     z-index: -1000;
     background: rgba(0,0,0,0.0);
 }
